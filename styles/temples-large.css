@@ -1,9 +1,5 @@
 @media (min-width: 37.5em) {
 
-    :root {
-        --primary-color: #007bff;
-        --secdonary-color: #bbb;
-    }
     
     header {
         display: flex;
