@@ -85,7 +85,8 @@ main {
 }
 
 .imageDesc img {
-    width: 25%;
+    width: 150px;
+    height: 200px;
     height: auto;
 }
 
