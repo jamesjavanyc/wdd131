@@ -56,12 +56,13 @@ main {
     margin: 5px;
     display: flex;
     flex-direction: column;
-    .cardContent {
-        border: 1px solid gray;
-        border-radius: 0 0 1rem 1rem;
-        padding: 2rem;
-        height: 100%;
-    }
+}
+
+.cardContent {
+    border: 1px solid gray;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem;
+    height: 100%;
 }
 
 .card > h2 {
