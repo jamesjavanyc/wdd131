@@ -35,9 +35,10 @@ nav > ul > li {
     list-style: none;
     padding: 10px;
     background-color: lightgray;
-    &:hover {
-        background-color: gray;
-    }
+}
+
+nav > ul > li :hover {
+    background-color: gray;
 }
 
 nav > ul > li > a {
