@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New York</title>
-    <meta name="description" content="Site about the weather report" />
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Junzhou Liu</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Junzhou Liu's Place page">
+    <meta name="author" content="Junzhou Liu">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer ></script>
+    <script src="scripts/calculate-windchill.js" defer ></script>
 </head>
 
 <body>
@@ -18,26 +18,31 @@
         <h1>New York</h1>
     </header>
     <main>
-        <div class="banner-hero">
-            <section class="weather-summary">
-                <h3>Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>Temperature: <span id="temperature">50</span>°</p>
-                <p>Wind Chill: <span id="chillWind"></span>°F</p>
-                <p>Humidity: 67%</p>
-                <p>Precipitation: 58%</p>
-                <p>Wind Speed: <span id="wind">9</span>MPH</p>
-            </section>
-            <picture>
-                <source srcset="images/wdd230-image-franklin-small.jpg" media="(max-width: 550px)">
-                <source srcset="images/wdd230-image-franklin-medium.jpg" media="(max-width: 950px)">
-                <img src="images/wdd230-image-franklin-large.jpg" alt="franklin landscape">
-            </picture>
-        </div>
-        <article class="card">
-            <h2>Data</h2>
-
-        </article>
+        <picture>
+            <source srcset="/images/nyc-small.webp" media="(max-width: 550px)">
+            <source srcset="/images/nyc-medium.webp" media="(max-width: 950px)">
+            <img src="/images/nyc-large.webp" alt="New York landscape">
+        </picture>
+        <section class="summary dataSummary">
+            <h3>Data</h3>
+            <div><span class="summaryTitle">Area</span><span>:</span><span>54,556 mi²</span></div>
+            <div><span class="summaryTitle">Population</span><span>:</span><span>8 Millions</span></div>
+            <div><span class="summaryTitle">Capital</span><span>:</span><span>New York</span></div>
+            <div><span class="summaryTitle">Language</span><span>:</span><span>English</span></div>
+            <div><span class="summaryTitle">Currency</span><span>:</span><span>USD</span></div>
+            <div><span class="summaryTitle">Timezone</span><span>:</span><span>GMT-4</span></div>
+            <div><span class="summaryTitle">Calling Code</span><span>:</span><span>+1</span></div>
+            <div><span class="summaryTitle">Internet TLD</span><span>:</span><span>.mg</span></div>
+        </section>
+        <section class="summary weatherSummary">
+            <h3 class="weather">
+                Weather
+            </h3>
+            <div><span class="summaryTitle">Temperature</span><span>:</span><span id="temperature">10°C</span></div>
+            <div><span class="summaryTitle">Condition</span><span>:</span> <span>Sunny</span></div>
+            <div><span class="summaryTitle">Wind Speed</span><span>:</span><span id="wind">9KM/H</span></div>
+            <div><span class="summaryTitle">Wind Chill</span><span>:</span><span id="chillWind">°C</span></div>
+        </section>
     </main>
     <footer>
         <p>
@@ -50,8 +55,6 @@
 
         </p>
     </footer>
-    <script src="js/cal-windchill.js"></script>
-    <script src="scripts/getdates.js" defer ></script>
 </body>
 
 </html>
