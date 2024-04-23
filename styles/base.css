@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --primary-color: #007bff;
+    --secdonary-color: #6c757d;
+}
 
 * {
     margin: 0;
@@ -8,7 +12,7 @@
 }
 
 header {
-    background-color: #007bff;
+    background-color: var(--primary-color);
 
 }
 
@@ -23,7 +27,7 @@ nav > ul {
     display: flex;
     margin-bottom: 1rem;
     justify-content: space-around;
-    background-color: #6c757d;
+    background-color: var(--secdonary-color);
 }
 
 nav > ul > li {
@@ -71,7 +75,7 @@ main {
 
 .card > h2 {
     text-align: center;
-    background-color: #007bff;
+    background-color: var(--primary-color);
     border-radius: 1rem 1rem 0 0;
 }
 
@@ -97,5 +101,5 @@ main {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #007bff;
+    background-color: var(--primary-color);
 }
